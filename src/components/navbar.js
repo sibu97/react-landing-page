@@ -12,7 +12,8 @@ function navbar  ()  {
                 <IconButton size="small" edge="start" color="inherit" aria-label='logo'>
                 <img src={Icon} alt=" icon" width="109px" height="54.5px"/>
                 </IconButton>
-                <Typography varient="h6" component='div' sx={{flexGrow:1}} >
+                    <Typography varient="h6" component='div' sx={{ flexGrow: 1 }}
+                style={{fontweight:900,fontSize:"40px",fontFamily:"Raleway"}}    >
                     NinjaMail
                 </Typography>
                 <Stack direction='row' spacing={3}>
