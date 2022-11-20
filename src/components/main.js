@@ -18,28 +18,30 @@ const main = () => {
     return (
         <>
            
-                    <div style={{ backgroundColor: "#E5E5E5", display:"flex", height:"744px" ,width:"auto" }} className="cont">
+              <div style={{ backgroundColor: "#E5E5E5", display:"flex", height:"744px" ,width:"auto" }} className="cont">
                             <img src={Sls} alt="img" width="60%" height="90%"
-                        style={{ marginLeft: "20px", marginnTop: "10px" ,position: "absolute"}}/>
+                             style={{ marginLeft: "20px", marginnTop: "10px", position: "absolute" }} />
+          
                             <img src={Vmg} alt="img" width="944px" height="631px" 
-                    style={{ marginLeft: "310px", marginTop: "300px", position: "relative",
-                    textAlign: "center", float: "left" }}/>
-                    <Button style={{ backgroundColor: '#fff', color: "#4BA87D",width: "200px",  height: "65px",
-                            fontSize: "21px",textAlign:"center",  marginTop:"820px" ,position: "absolute"}}
-                        variant="contained" className="btn" >LEARN NOW</Button>
-                <Typography varient="h6" style={{
-                    fontFamily: "Playfair Display", fontWeight: 900, fontSize: "60px", color: "#fff"
-                ,marginLeft:"32%",marginTop:"490px" ,position: "absolute"}}
-                 component='div' sx={{flexGrow:1}} >
+                             style={{ marginLeft: "310px", marginTop: "300px", position: "relative",
+                             textAlign: "center", float: "left" }}/>
+                 
+                        <Typography varient="h6" style={{
+                          fontFamily: "Playfair Display", fontWeight: 900, fontSize: "60px", color: "#fff"
+                        ,marginLeft:"32%",marginTop:"490px" ,position: "absolute"}} component='div' sx={{flexGrow:1}} >
                         Reach More Costomers
-                    </Typography>
-                    </div>
+                       </Typography>
+                      <Button style={{ backgroundColor: '#fff', color: "#4BA87D",width: "200px",  height: "65px",
+                            fontSize: "21px",textAlign:"center", marginTop:"1100px",position: "absolute"}}
+                        variant="contained" className="btn" >LEARN NOW</Button>
+                </div>
+        
                     <div style={{
                         backgroundImage: `url(${Bg})`,
                         height: "1120px",backgroundSize: 'cover', resize: "both",overflow:"",
-                backgroundPosition: 'center', width: "auto", backgroundColor: "#E5E5E5"
-            }}>
-    <Stack direction='row' style={{display:"flex"}}>
+                        backgroundPosition: 'center', width: "auto", backgroundColor: "#E5E5E5" }}>
+          
+       <Stack direction='row' style={{display:"flex"}}>
           <Stack direction='row' style={{ width: '170%',marginLeft:"80px",marginTop:"250px" }}>
             <Card sx={{ maxWidth: 345 }} style={{ marginBottom: '81.59px' }}>
               <CardMedia
@@ -93,14 +95,41 @@ const main = () => {
 
         <Stack
           direction='row'
-          style={{ marginTop: '133px', justifyContent: 'space-between' }}
-        >
-          <img src={lft} alt='client-1' />
-          <img src={mdl} alt='client-2' />
-          <img src={rgt} alt='client-3' />
+          style={{ marginTop: '133px', gap:"40px",margin:"200px",position:"absolute",justifyContent: 'space-between' }}
+          >
+          <article className="article">
+            <picture className="picture">
+              <source media="(min-width: 0px)" srcSet={lft} />
+                <img src={lft} alt="background" />
+              </picture>
+              <div>
+              <h1 className="header">Frankie</h1>
+              <h2 className="btn">Member since 2016</h2></div>
+            </article>
+            
+            <article className="article">
+            <picture className="picture">
+              <source media="(min-width: 0px)" srcSet={mdl} />
+                <img src={mdl} alt="background" />
+              </picture>
+              <div>
+              <h1 className="header">Camile</h1>
+              <h2 className="btn">Member since 2012</h2></div>
+            </article>
+
+            <article className="article">
+            <picture className="picture">
+              <source media="(min-width: 0px)" srcSet={rgt} />
+                <img src={rgt} alt="background" />
+              </picture>
+              <div>
+              <h1 className="header">Elayne</h1>
+              <h2 className="btn">Member since 2018</h2></div>
+            </article>
+     
         </Stack>
                                 
-                   </div>
+      </div>
         
            
       </>

@@ -16,7 +16,7 @@ function navbar  ()  {
                 style={{fontweight:900,fontSize:"40px",fontFamily:"Raleway"}}    >
                     NinjaMail
                 </Typography>
-                <Stack direction='row' spacing={3}>
+                <Stack direction='row' spacing={3}style={{marginRight:"100px"}}>
                     <p class="hover-underline-animation"  variant="contained">FEATURES</p>
                     <p class="hover-underline-animation" variant="contained" style={{marginTop:"16px"}} >PRICING</p>
                     <p class="hover-underline-animation" variant="contained" style={{marginTop:"16px"}}>SERVICES</p>
